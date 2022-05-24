@@ -1,6 +1,5 @@
 # Digital Bussiness Cards #
-### Nahdet Misr AI ###
-### heraqi@aucegypt.edu ###
+### Nahdet Misr AI, heraqi@aucegypt.edu ###
 
 **Steps to generate or editing Digital Cards for employee with ID <span style="color:red">5</span> for example:**
 
