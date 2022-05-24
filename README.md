@@ -1,7 +1,7 @@
 # Digital Bussiness Cards #
 ### Nahdet Misr AI, heraqi@aucegypt.edu ###
 
-**Steps to generate or editing Digital Cards for employee number number <span style="color:red">5</span> for example:**
+**Steps to generate or editing Digital Cards for employee number number <span style="color:red">5</span> for example (you can do that on multiple employees at once):**
 
 1. Generate the QR code that will be printed with on the physical card:
 	1. Visit this website or similar QR code generator websites: https://www.logodesign.net/qrcode-generator (You can use this front color which represents the company identity #24317E and add/or the company logo image, it can be found at assets\images\logo\logo.png)
