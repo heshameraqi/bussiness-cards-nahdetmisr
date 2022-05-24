@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!--====== Title ======-->
+    <title>Nahdet Misr Publishing Group - Bussiness Card</title>
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--====== Favicon Icon ======-->
+    <link
+      rel="shortcut icon"
+      href="assets/images/icon.ico"
+      type="image/png"
+    />
+
+    <!--====== CSS Files LinkUp ======-->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+	<!--====== CSV Parcing Scripts ======-->
+	<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <script type="text/javascript">
+	var employee_id = 0
+	function readCSV() {
+		var xmlhttp = new XMLHttpRequest();
+		  xmlhttp.open("GET", "https://raw.githubusercontent.com/nahdetmisrai1/bussiness-cards/main/data/Business%20Cards.csv", false); // `false` makes the request synchronous
+		  xmlhttp.send();
+		  if (xmlhttp.status==200) {
+			result = xmlhttp.responseText;
+		  }
+		  var lines = result.split(/\r?\n/);
+		  
+		  // employee_number Starts with 1. Set according to employee data row number in data/Bussiness Cards.csv. Recieved as a parameter
+		  // employee_number = 2
+		  var url = new URL(window.location.href);
+		  var employee_number = url.searchParams.get("employee_number");
+		  
+		  var data = lines[employee_number-1].split("|");
+		
+		  document.getElementById("photo").setAttribute("src", "photos/" + employee_number + ".jpg");
+		  document.getElementById("name").innerHTML = data[0];
+	      document.getElementById("title_company").innerHTML = data[2];
+	      document.getElementById("phone").innerHTML = data[3];
+	      document.getElementById("email").innerHTML = data[1];
+		  
+		  <!--====== Adding LinkedIn Badge ======-->
+		  var div = document.createElement("div");
+		  div.className = "badge-base LI-profile-badge";
+		  div.setAttribute("data-locale", "en_US");
+		  div.setAttribute("data-size", "medium");
+		  div.setAttribute("data-theme", "light");
+		  div.setAttribute("data-type", "VERTICAL");
+		  div.setAttribute("data-vanity", data[4]);
+		  div.setAttribute("data-version", "v1");
+		  document.getElementById("card").appendChild(div);
+		  
+		  // For debugging
+		  //const welcomeTextNode = document.createTextNode("AAAAAAAAAAA");
+		  //document.getElementById("card").appendChild(welcomeTextNode);
+		  
+		  document.getElementById("vcard_number").setAttribute("href", "vcards/" + employee_number + "-vcard.vcf");
+		  document.getElementById("card_number_barcode").setAttribute("src", "https://api.qrserver.com/v1/create-qr-code/?data=https://rawcdn.githack.com/nahdetmisrai1/bussiness-cards/main/vcards/" + employee_number + "-vcard.vcf&amp;size=100x100");
+	}
+    </script>
+  </head>
+
+  <body onload="readCSV()">
+    <div class="row">
+		<div class="logo text-center">
+			<img src="assets/images/logo/logo.svg">
+		</div>
+	</div>
+	
+	<div class="col-md-4">
+		<div class="card card-dark bg-secondary-gradient">
+			<div id="card" class="card-body bubble-shadow">
+				<div class="d-flex justify-content-between">
+					<img id="photo" src="photos/0.jpg" width="200" alt="Personal Photo">
+					<a id="vcard_number" class="button text-success" href="vcards/1-vcard.vcf">
+						<div class="text-center">
+							<b>Add Contact</b>
+						</div>
+						<!--====== V Card Generated QR Code ======-->
+						<div class="col-4 pl-0 text-right">
+							<img id='card_number_barcode' 
+								src="https://api.qrserver.com/v1/create-qr-code/?data=https://rawcdn.githack.com/nahdetmisrai1/bussiness-cards/main/vcards/1-vcard.vcf&amp;size=100x100" 
+								alt="" 
+								title="Digital Card" 
+								width="120" 
+								height="120" />
+						</div>
+					</a>
+				</div>
+
+				<h4 id="name" class="fw-bold mb-1 mt-2">Loading ...</h4>
+				
+				<div id="title_company" class="small" style="font-weight: bold">Nahdet Misr Publishing House</div>
+				<div class="row mt-4">
+					<div class="col-8">
+						<div id="phone" class="small"><b>Tel:</b> Loading ...</div>
+						<div id="email" class="small mt-2"><b> Loading ...</b></div>
+						<br>
+						<a href="www.nahdetmisr.com">
+							<div class="small"><b>www.nahdetmisr.com</b></div>
+						</a>
+						<div class="small"><b>Address:</b> 21 Ahmed Oraby Street, El Nahda Tower Mohandessine, Giza, Egypt</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12">
+
+	</div>
+
+    <!--====== Javascript Files ======-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

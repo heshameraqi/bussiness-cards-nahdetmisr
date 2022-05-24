@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Mohamed Ibrahim
+N;CHARSET=UTF-8:Ibrahim;Mohamed;Mr.;
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:m.Ibrahim@writtenword-bvi.com
+EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:m.Ibrahim@writtenword-bvi.com
+TEL;TYPE=CELL:+20233027800
+TEL;TYPE=WORK,VOICE:+20233029800
+ADR;CHARSET=UTF-8;TYPE=WORK:;;;;Cairo;;Egypt
+TITLE;CHARSET=UTF-8:Chairman
+ROLE;CHARSET=UTF-8:Chairman
+ORG;CHARSET=UTF-8:The Written Word Ltd.\, Nahdet Misr Publishing House
+URL;type=WORK;CHARSET=UTF-8:www.nahdetmisr.com
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/mohamed-ibrahim-95b69662
+REV:2022-03-02T17:02:57.764Z
+END:VCARD

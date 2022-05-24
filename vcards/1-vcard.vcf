@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Dalia M. Ibrahim
+N;CHARSET=UTF-8:Ibrahim;Dalia;M.;Mrs.;
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:dalia@nahdetmisr.com
+EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:daliam@nahdetmisr.com
+TEL;TYPE=CELL:+20201222160011
+TEL;TYPE=WORK,VOICE:+20233466434
+ADR;CHARSET=UTF-8;TYPE=WORK:;;;;Cairo;;Egypt
+TITLE;CHARSET=UTF-8:Founder\, CEO
+ROLE;CHARSET=UTF-8:Founder\, CEO
+ORG;CHARSET=UTF-8:Nahdet Misr Publishing House\, EdVentures
+URL;type=WORK;CHARSET=UTF-8:www.nahdetmisr.com
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/dalia-ibrahim-258b5430
+REV:2022-03-02T17:02:57.764Z
+END:VCARD
