@@ -41,7 +41,10 @@
 		  var url = new URL(window.location.href);
 		  var employee_number = url.searchParams.get("employee_number");
 		  
-		  var data = lines[employee_number-1].split("|");
+		  var data = lines[employee_number-1].split(";");
+		  
+		  console.log("AAAAAAAAAAAAA");
+		  console.log(lines[employee_number-1]);
 		
 		  document.getElementById("photo").setAttribute("src", "photos/" + employee_number + ".jpg");
 		  document.getElementById("name").innerHTML = data[0];
