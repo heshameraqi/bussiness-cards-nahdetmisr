@@ -10,7 +10,7 @@
 3. Create or edit the data in X-vcard.vcf file in the folder vcards (You can open it was any text editor as Notepad).
 4. Send a jpg personal photo for the employee named <span style="color:red">5</span>.jpg
 
-Notes:
+**Notes:**
 - This repository is for developers who are willing to continue development or changes to this project: https://github.com/heshameraqi/bussiness-cards-nahdetmisr
 - Company logo can be retrieved from https://github.com/heshameraqi/bussiness-cards-nahdetmisr/blob/main/assets/images/logo/logo.png
 - Employee photo should be added to the photos folder.
